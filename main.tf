@@ -25,7 +25,7 @@ resource "azurerm_resource_group" "example" {
 
 module "static_webapp" {
   source                   = "app.terraform.io/shahidazim/static-webapp/azure"
-  version                  = "1.0.0"
+  version                  = "1.0.1"
   resource_group_name      = azurerm_resource_group.example.name
   storage_account_location = var.location
   storage_account_name     = random_pet.petname.id
