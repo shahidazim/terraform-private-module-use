@@ -23,7 +23,7 @@ resource "azurerm_resource_group" "example" {
   location = var.location
 }
 
-module "static-webapp" {
+module "static_webapp" {
   source                   = "app.terraform.io/shahidazim/static-webapp/azure"
   version                  = "1.0.0"
   resource_group_name      = azurerm_resource_group.example.name
